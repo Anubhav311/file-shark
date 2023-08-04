@@ -2,9 +2,10 @@
   "name": "file-shark",
   "version": "1.0.0",
   "description": "Easiest way to handle files in react",
-  "main": "index.js",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.ts",
   "scripts": {
-    "prepublish": "rm -rf ./dist && npm run build",
     "build": "yarn build:esm && yarn build:cjs",
     "build:esm": "tsc",
     "build:cjs": "tsc --module commonjs --outDir dist/cjs",
@@ -19,20 +20,25 @@
     "url": "git+https://github.com/Anubhav311/file-shark.git"
   },
   "keywords": [
-    "file-shark"
+    "file-shark",
+    "file",
+    "upload",
+    "image"
   ],
   "author": "Anubhav",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Anubhav311/file-shark/issues"
   },
   "homepage": "https://github.com/Anubhav311/file-shark#readme",
   "files": [
-    "dist"
+    "dist",
+    "LICENSE",
+    "README.md"
   ],
   "peerDependencies": {
-    "react": ">=15.0.1",
-    "react-dom": ">=15.0.1"
+    "react": ">=16.0.1",
+    "react-dom": ">=16.0.1"
   },
   "devDependencies": {
     "@testing-library/react": "^14.0.0",
