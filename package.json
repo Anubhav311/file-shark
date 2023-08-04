@@ -1,0 +1,47 @@
+{
+  "name": "file-shark",
+  "version": "1.0.0",
+  "description": "Easiest way to handle files in react",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "rm -rf ./dist && npm run build",
+    "build": "tsc",
+    "lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\"",
+    "prettier": "prettier --write \"{src,tests,example/src}/**/*.{js,ts,jsx,tsx}\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anubhav311/file-shark.git"
+  },
+  "keywords": [
+    "file-shark"
+  ],
+  "author": "Anubhav",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anubhav311/file-shark/issues"
+  },
+  "homepage": "https://github.com/Anubhav311/file-shark#readme",
+  "files": [
+    "dist"
+  ],
+  "peerDependencies": {
+    "react": ">=15.0.1",
+    "react-dom": ">=15.0.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.18",
+    "@typescript-eslint/eslint-plugin": "^6.2.1",
+    "@typescript-eslint/parser": "^6.2.1",
+    "eslint": "^8.46.0",
+    "eslint-config-prettier": "^8.10.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-react": "^7.33.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "prettier": "^3.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.1.6"
+  }
+}
